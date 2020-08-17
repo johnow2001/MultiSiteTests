@@ -21,8 +21,8 @@ steps:
   inputs:
     command: build
     projects: |
-      'MyStoreSpecflowTest.csproj' 
-      'PhpTravelSiteTests.csproj'
+      '*/MyStoreSpecflowTest/MyStoreSpecflowTest.csproj' 
+      '*/PhptravelSiteTests/PhpTravelSiteTests.csproj'
 
 - task: DotNetCoreCLI@2
   inputs:
