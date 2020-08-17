@@ -20,9 +20,7 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: build
-    projects: |
-      '*SpecFlowTestingDifferentSites/MyStoreSpecflowTest/MyStoreSpecflowTest.csproj' 
-      '*SpecFlowTestingDifferentSites/PhptravelSiteTests/PhpTravelSiteTests.csproj'
+    projects: '**/*Test/*.csproj'
 
 
 - task: DotNetCoreCLI@2
